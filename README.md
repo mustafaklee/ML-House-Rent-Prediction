@@ -1,2 +1,1 @@
-# ML-Project-House-Rent-Prediction
-Web Scarping yöntemi ile emlakjet (https://www.emlakjet.com/kiralik-daire/) sitesinden çektiğim ilan verileri kullanarak Regresyon projesi.
+Web scraping ile Emlakjet'ten elde edilen veriler üzerinde çalışarak farklı regresyon modellerini denedim. Hedefim, kira fiyatı tahmininde en iyi performansı veren modeli bulmaktı. Bu süreçte veri toplama, veri görselleştirme, ön işleme ve model karşılaştırmaları gerçekleştirdim.
