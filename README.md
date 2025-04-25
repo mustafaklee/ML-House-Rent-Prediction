@@ -1,44 +1,48 @@
-Bu proje, web scraping ile Emlakjet üzerinden elde edilen gerçek verilerle, ev kiralarını tahmin etmeyi amaçlamaktadır. Makine öğrenmesi tekniklerini kullanarak farklı regresyon modelleri denenmiş ve en iyi performansı veren modelin belirlenmesi hedeflenmiştir.
+## Proje Yöntemi
+- Bu proje, web scraping ile Emlakjet üzerinden elde edilen gerçek verilerle, ev kiralarını tahmin etmeyi amaçlamaktadır. Makine öğrenmesi tekniklerini kullanarak farklı regresyon modelleri denenmiş ve en iyi performansı veren modelin belirlenmesi hedeflenmiştir.
 
-Projenin Amacı
-Kullanıcının girdiği konum, metrekare, oda sayısı, teraslı olması, metroya yakınlığı gibi özelliklere göre kira fiyatını olabildiğince doğru bir şekilde tahmin etmek.
+## Projenin Amacı
+- Kullanıcının girdiği konum, metrekare, oda sayısı, teraslı olması, metroya yakınlığı gibi özelliklere göre kira fiyatını olabildiğince doğru bir şekilde tahmin etmek.
 
-Projede Yapılanlar
+## Projede Yapılanlar
+- Veri Toplama: Web scraping ile Emlakjet'ten ham veri çekildi.
 
-Veri Toplama: Web scraping ile Emlakjet'ten ham veri çekildi.
+**Feature Engineering:**
 
-Feature Engineering: Kategorik verilerin dönüştürülmesi, yeni değişkenlerin türetilmesi gibi işlemler uygulandı.Kullanıcıların yazdığı ilan adlarından yeni feature'lar elde edildi.
+- Kategorik verilerin dönüştürülmesi, yeni değişkenlerin türetilmesi gibi işlemler uygulandı.
 
-Veri Analizi ve Görselleştirme: Özellikle konum, metrekare, oda sayisi gibi değişkenlerin dağılımları incelendi.
+- Kullanıcıların yazdığı ilan adlarından yeni feature'lar elde edildi.
 
-Veri Temizleme: Eksik ve aykırı değerler analiz edilerek uygun şekilde temizlendi.
+- Veri Analizi ve Görselleştirme: Özellikle konum, metrekare, oda sayısı gibi değişkenlerin dağılımları incelendi.
 
-Modelleme: Aşağıdaki regresyon modelleri eğitildi ve karşılaştırıldı:
+- Veri Temizleme: Eksik ve aykırı değerler analiz edilerek uygun şekilde temizlendi.
 
-Linear Regression
+**Modelleme:** Aşağıdaki regresyon modelleri eğitildi ve karşılaştırıldı:
 
-Polynomal Regression
+- Linear Regression
 
-Ridge Regression
+- Polynomial Regression
 
-Lasso Regression
+- Ridge Regression
 
-Random Forest Regressor
+- Lasso Regression
 
-XGBoost Regressor
+- Random Forest Regressor
 
-Model Değerlendirme: Aşağıdaki metrikler ile model performansları değerlendirildi:
+- XGBoost Regressor
 
-Mean Squared Error (MSE)
+**Model Değerlendirme:** Aşağıdaki metrikler ile model performansları değerlendirildi:
 
-Root Mean Squared Error (RMSE)
+- Mean Squared Error (MSE)
 
-R² Score
+- Root Mean Squared Error (RMSE)
 
-Model Karşılaştırması
+- R² Score
+
+**Model Karşılaştırması**
 Modeller, hem eğitim hem de test verisi üzerinde test edilerek overfitting ve genel doğruluk durumları incelendi. Bazı modellerin, belirli feature setleriyle daha düşük hata verdiği gözlemlendi.
 
-Kurulum ve Kullanım
+**Kurulum ve Kullanım**
 ```bash
 git clone https://github.com/mustafaklee/ML-House-Rent-Prediction.git
 cd ML-House-Rent-Prediction
