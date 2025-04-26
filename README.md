@@ -48,3 +48,4 @@ git clone https://github.com/mustafaklee/ML-House-Rent-Prediction.git
 cd ML-House-Rent-Prediction
 pip install -r requirements.txt
 ```
+.
